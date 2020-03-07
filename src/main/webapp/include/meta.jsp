@@ -6,4 +6,4 @@
   To change this template use File | Settings | File Templates.
 --%>
 <meta charset="UTF-8"/>
-<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.css"/>
