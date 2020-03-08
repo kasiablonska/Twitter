@@ -1,4 +1,4 @@
-package persistence;
+package pl.sda.twitter.persistence;
 
 import lombok.Getter;
 import org.hibernate.SessionFactory;
