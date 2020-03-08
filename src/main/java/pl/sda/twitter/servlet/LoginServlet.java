@@ -5,6 +5,7 @@ import pl.sda.twitter.exception.IncorrectLoginPasswordException;
 import pl.sda.twitter.persistence.entities.TbUser;
 import pl.sda.twitter.services.UserService;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -49,5 +50,10 @@ public class LoginServlet extends HttpServlet {
 //            writer.write("Niepoprawne dane logowania");
 //        }
 //    }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req,resp);
     }
 }
