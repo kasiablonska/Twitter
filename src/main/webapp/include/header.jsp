@@ -18,6 +18,8 @@
                 <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+
+
                 <c:choose>
                     <c:when test="${sessionScope.user==null}">
                         <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp">Log in</a>
@@ -35,3 +37,4 @@
         </form>
     </div>
 </nav>
+<jsp:include page="messages.jsp"/>
