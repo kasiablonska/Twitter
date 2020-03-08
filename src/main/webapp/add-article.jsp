@@ -20,7 +20,7 @@
           class="form-add-article" action="add-article" method="post">
     <label for="inputConcent" class="sr-only">Tresc</label>
     <textarea rows="10" id="inputConcent" name="content" class="form-control" placeholder="Tresc" required autofocus></textarea>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Wyslij</button>
 
     </form>
 </main>
