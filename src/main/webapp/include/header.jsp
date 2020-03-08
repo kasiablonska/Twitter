@@ -15,17 +15,17 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href=""${pageContext.request.contextPath}/index.jsp"/>Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-
-<%-- dokonczyc--%>
-<%--                <c:choose>--%>
-<%--                    <c:when test="${sessionScope.user ==null">--%>
-<%--                        <a class="nav-link" href ="${pageContext.request.context}"--%>
-<%--           }"></c:when>--%>
-<%--                </c:choose>--%>
-<%--                <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp"/>Log in</a>--%>
+                <c:choose>
+                    <c:when test="${sessionScope.user==null}">
+                        <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp">Log in</a>
+                    </c:when>
+                    <c:otherwise>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/logout">Log out</a>
+                    </c:otherwise>
+                </c:choose>
 
             </li>
         </ul>
